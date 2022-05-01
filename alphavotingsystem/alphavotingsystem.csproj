@@ -48,6 +48,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dbConnection.cs" />
+    <Compile Include="formAdminCandidates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdminCandidates.Designer.cs">
+      <DependentUpon>formAdminCandidates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAdminCandidatesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdminCandidatesAdd.Designer.cs">
+      <DependentUpon>formAdminCandidatesAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="formAdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +71,12 @@
     </Compile>
     <Compile Include="formAdminMain.Designer.cs">
       <DependentUpon>formAdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAdminVoters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdminVoters.Designer.cs">
+      <DependentUpon>formAdminVoters.cs</DependentUpon>
     </Compile>
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
@@ -72,7 +90,9 @@
     <Compile Include="formRegister.Designer.cs">
       <DependentUpon>formRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="functionCandidate.cs" />
     <Compile Include="functionSettings.cs" />
+    <Compile Include="functionVotes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="votingdbDataSet.Designer.cs">
@@ -80,11 +100,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>votingdbDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="formAdminCandidates.resx">
+      <DependentUpon>formAdminCandidates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAdminCandidatesAdd.resx">
+      <DependentUpon>formAdminCandidatesAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formAdminLogin.resx">
       <DependentUpon>formAdminLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formAdminMain.resx">
       <DependentUpon>formAdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAdminVoters.resx">
+      <DependentUpon>formAdminVoters.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>

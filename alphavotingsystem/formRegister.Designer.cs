@@ -47,10 +47,9 @@ namespace alphavotingsystem
             // adminLinkLabel
             // 
             this.adminLinkLabel.AutoSize = true;
-            this.adminLinkLabel.Location = new System.Drawing.Point(18, 595);
-            this.adminLinkLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.adminLinkLabel.Location = new System.Drawing.Point(9, 309);
             this.adminLinkLabel.Name = "adminLinkLabel";
-            this.adminLinkLabel.Size = new System.Drawing.Size(260, 25);
+            this.adminLinkLabel.Size = new System.Drawing.Size(128, 13);
             this.adminLinkLabel.TabIndex = 34;
             this.adminLinkLabel.TabStop = true;
             this.adminLinkLabel.Text = "go to Admin Page (admin)";
@@ -58,10 +57,9 @@ namespace alphavotingsystem
             // 
             // continueButton
             // 
-            this.continueButton.Location = new System.Drawing.Point(408, 491);
-            this.continueButton.Margin = new System.Windows.Forms.Padding(6);
+            this.continueButton.Location = new System.Drawing.Point(204, 255);
             this.continueButton.Name = "continueButton";
-            this.continueButton.Size = new System.Drawing.Size(150, 44);
+            this.continueButton.Size = new System.Drawing.Size(75, 23);
             this.continueButton.TabIndex = 33;
             this.continueButton.Text = "Continue";
             this.continueButton.UseVisualStyleBackColor = true;
@@ -69,11 +67,14 @@ namespace alphavotingsystem
             // 
             // studentSectionComboBox
             // 
+            this.studentSectionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.studentSectionComboBox.FormattingEnabled = true;
-            this.studentSectionComboBox.Location = new System.Drawing.Point(30, 410);
-            this.studentSectionComboBox.Margin = new System.Windows.Forms.Padding(6);
+            this.studentSectionComboBox.Items.AddRange(new object[] {
+            "A",
+            "B"});
+            this.studentSectionComboBox.Location = new System.Drawing.Point(15, 213);
             this.studentSectionComboBox.Name = "studentSectionComboBox";
-            this.studentSectionComboBox.Size = new System.Drawing.Size(524, 33);
+            this.studentSectionComboBox.Size = new System.Drawing.Size(264, 21);
             this.studentSectionComboBox.TabIndex = 32;
             // 
             // studentStrandComboBox
@@ -82,13 +83,15 @@ namespace alphavotingsystem
             this.studentStrandComboBox.FormattingEnabled = true;
             this.studentStrandComboBox.Items.AddRange(new object[] {
             "STEM",
+            "GAS",
             "ABM",
             "HUMMS",
-            "TVL"});
-            this.studentStrandComboBox.Location = new System.Drawing.Point(294, 320);
-            this.studentStrandComboBox.Margin = new System.Windows.Forms.Padding(6);
+            "TVL - HE",
+            "TVL - ICT",
+            "TVL - ELEC TECH"});
+            this.studentStrandComboBox.Location = new System.Drawing.Point(147, 166);
             this.studentStrandComboBox.Name = "studentStrandComboBox";
-            this.studentStrandComboBox.Size = new System.Drawing.Size(260, 33);
+            this.studentStrandComboBox.Size = new System.Drawing.Size(132, 21);
             this.studentStrandComboBox.TabIndex = 31;
             // 
             // studentYearComboBox
@@ -98,95 +101,86 @@ namespace alphavotingsystem
             this.studentYearComboBox.Items.AddRange(new object[] {
             "11",
             "12"});
-            this.studentYearComboBox.Location = new System.Drawing.Point(30, 320);
-            this.studentYearComboBox.Margin = new System.Windows.Forms.Padding(6);
+            this.studentYearComboBox.Location = new System.Drawing.Point(15, 166);
             this.studentYearComboBox.Name = "studentYearComboBox";
-            this.studentYearComboBox.Size = new System.Drawing.Size(248, 33);
+            this.studentYearComboBox.Size = new System.Drawing.Size(126, 21);
             this.studentYearComboBox.TabIndex = 30;
             this.studentYearComboBox.TabStop = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(288, 289);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label5.Location = new System.Drawing.Point(144, 150);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 25);
+            this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 25;
             this.label5.Text = "Strand";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 380);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Location = new System.Drawing.Point(14, 198);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 25);
+            this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 26;
             this.label6.Text = "Section";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 289);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(14, 150);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 25);
+            this.label4.Size = new System.Drawing.Size(29, 13);
             this.label4.TabIndex = 27;
             this.label4.Text = "Year";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 195);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(14, 101);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 25);
+            this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 28;
             this.label3.Text = "Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 108);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(14, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 25);
+            this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 29;
             this.label2.Text = "Student ID";
             // 
             // studentNameTextBox
             // 
-            this.studentNameTextBox.Location = new System.Drawing.Point(30, 228);
-            this.studentNameTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.studentNameTextBox.Location = new System.Drawing.Point(15, 119);
             this.studentNameTextBox.Name = "studentNameTextBox";
-            this.studentNameTextBox.Size = new System.Drawing.Size(524, 31);
+            this.studentNameTextBox.Size = new System.Drawing.Size(264, 20);
             this.studentNameTextBox.TabIndex = 23;
             // 
             // studentIDTextBox
             // 
-            this.studentIDTextBox.Location = new System.Drawing.Point(30, 141);
-            this.studentIDTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.studentIDTextBox.Location = new System.Drawing.Point(15, 73);
             this.studentIDTextBox.Name = "studentIDTextBox";
-            this.studentIDTextBox.Size = new System.Drawing.Size(524, 31);
+            this.studentIDTextBox.Size = new System.Drawing.Size(264, 20);
             this.studentIDTextBox.TabIndex = 24;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(12, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(290, 48);
+            this.label1.Size = new System.Drawing.Size(150, 25);
             this.label1.TabIndex = 22;
             this.label1.Text = "Voting System";
             // 
             // formRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 640);
+            this.ClientSize = new System.Drawing.Size(288, 333);
             this.Controls.Add(this.adminLinkLabel);
             this.Controls.Add(this.continueButton);
             this.Controls.Add(this.studentSectionComboBox);
@@ -201,6 +195,7 @@ namespace alphavotingsystem
             this.Controls.Add(this.studentIDTextBox);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "formRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Voting System";
