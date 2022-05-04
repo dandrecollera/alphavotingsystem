@@ -42,9 +42,8 @@ namespace alphavotingsystem
                     int[] votes = getInfo("votes");
                     functionVotes.updateVotes(id, votes);
                     functionVotes.addHistory();
-                    MessageBox.Show("Vote Registerd", "Thank You");                   
-                    toRegister();
-                    
+                    MessageBox.Show("Vote Registered", "Thank You");                   
+                    toRegister();                    
                 }
             }
         }
