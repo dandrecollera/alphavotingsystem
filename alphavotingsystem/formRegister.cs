@@ -25,19 +25,19 @@ namespace alphavotingsystem
         {
             if (studentIDTextBox.Text != "" && studentNameTextBox.Text != "" && studentYearComboBox.Text != "" && studentStrandComboBox.SelectedIndex != -1 && studentSectionComboBox.SelectedIndex != -1)
             {
-                if (chechVoters(studentIDTextBox.Text))
+                if (checkVoters(studentIDTextBox.Text))
                 {
                     MessageBox.Show("Student already voted", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     student.clearSettings();
                 }
                 else
                 {
-                student.inputSettings(studentIDTextBox.Text, studentNameTextBox.Text, studentYearComboBox.Text, studentStrandComboBox.Text, studentSectionComboBox.Text);
+                    student.inputSettings(studentIDTextBox.Text, studentNameTextBox.Text, studentYearComboBox.Text, studentStrandComboBox.Text, studentSectionComboBox.Text);
 
-                this.Hide();
-                formMain formMain = new formMain();
-                formMain.ShowDialog();
-                this.Close();
+                    this.Hide();
+                    formMain formMain = new formMain();
+                    formMain.ShowDialog();
+                    this.Close();
                 }
             }
             else
@@ -54,7 +54,7 @@ namespace alphavotingsystem
             this.Close();
         }
 
-        private bool chechVoters(string studentId)
+        private bool checkVoters(string studentId)
         {
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
